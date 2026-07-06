@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMS TECH | نصنع تجارب رقمية استثنائية</title>
+<meta name="description" content="AMS TECH — شركة متخصصة في تطوير تطبيقات الجوال، المواقع الإلكترونية، المتاجر الإلكترونية والمواقع الشخصية. نحوّل أفكارك إلى منتجات رقمية ناجحة.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230B0F14'/><path d='M18 44 L32 18 L46 44' stroke='%2300E5A0' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+</head>
+<body>
+
+<!-- ═══════════ شريط التنقل ═══════════ -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#hero" class="nav__logo" aria-label="AMS TECH">
+      <svg viewBox="0 0 64 64" width="38" height="38" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="var(--accent)" opacity="0.12"/>
+        <rect width="64" height="64" rx="14" fill="none" stroke="var(--accent)" stroke-opacity="0.35"/>
+        <path d="M18 44 L32 18 L46 44" stroke="var(--accent)" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav__logo-text">AMS<b>TECH</b></span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#services">خدماتنا</a>
+      <a href="#portfolio">أعمالنا</a>
+      <a href="#process">كيف نعمل</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <a href="#contact" class="btn btn--accent nav__cta">ابدأ مشروعك</a>
+    <button class="nav__burger" id="navBurger" aria-label="القائمة">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════ الواجهة الرئيسية ═══════════ -->
+<section class="hero" id="hero">
+  <div class="hero__mesh" aria-hidden="true"></div>
+  <div class="hero__grid-lines" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <div class="hero__badge reveal">
+        <span class="hero__badge-dot"></span>
+        شريكك التقني لبناء منتجات رقمية ناجحة
+      </div>
+      <h1 class="hero__title">
+        <span class="reveal d1">نحوّل فكرتك إلى</span>
+        <span class="reveal d2"><em>منتج رقمي</em></span>
+        <span class="reveal d3">يتحدث عن نفسه</span>
+      </h1>
+      <p class="hero__sub reveal d4">
+        في <strong>AMS TECH</strong> نصمم ونطوّر تطبيقات الجوال، المواقع الإلكترونية،
+        المتاجر الإلكترونية والمواقع الشخصية — بمعايير عالمية وهوية تليق بطموحك.
+      </p>
+      <div class="hero__actions reveal d5">
+        <a href="#portfolio" class="btn btn--accent btn--lg">شاهد أعمالنا
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn btn--ghost btn--lg">تحدث معنا</a>
+      </div>
+      <div class="hero__stats reveal d6">
+        <div class="stat"><span class="stat__num" data-count="85">0</span><span class="stat__plus">+</span><span class="stat__label">مشروع منجز</span></div>
+        <div class="stat"><span class="stat__num" data-count="60">0</span><span class="stat__plus">+</span><span class="stat__label">عميل سعيد</span></div>
+        <div class="stat"><span class="stat__num" data-count="6">0</span><span class="stat__plus"></span><span class="stat__label">سنوات خبرة</span></div>
+      </div>
+    </div>
+
+    <!-- لوحة كود مزخرفة -->
+    <div class="hero__visual reveal d4" aria-hidden="true">
+      <div class="code-card">
+        <div class="code-card__bar"><i></i><i></i><i></i><span>ams-tech.dev</span></div>
+        <pre class="code-card__body"><code><span class="c-kw">const</span> <span class="c-var">مشروعك</span> = <span class="c-kw">await</span> amsTech.<span class="c-fn">build</span>({
+  <span class="c-key">الفكرة</span>: <span class="c-str">"طموحة"</span>,
+  <span class="c-key">التصميم</span>: <span class="c-str">"استثنائي"</span>,
+  <span class="c-key">الأداء</span>: <span class="c-str">"فائق السرعة"</span>,
+  <span class="c-key">الدعم</span>: <span class="c-str">"مدى الحياة"</span>,
+});
+
+<span class="c-cm">// النتيجة: نجاح يتحدث عنه عملاؤك ✦</span>
+<span class="c-var">مشروعك</span>.<span class="c-fn">launch</span>(); <span class="c-ok">✓ تم الإطلاق</span></code></pre>
+        <div class="code-card__glow"></div>
+      </div>
+      <div class="hero__float hero__float--1"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="m8 6-6 6 6 6M16 6l6 6-6 6" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/></svg> كود نظيف</div>
+      <div class="hero__float hero__float--2">⚡ أداء فائق</div>
+      <div class="hero__float hero__float--3">🛡️ حماية وأمان</div>
+    </div>
+  </div>
+  <a href="#marquee" class="hero__scroll" aria-label="مرر للأسفل"><span></span></a>
+</section>
+
+<!-- ═══════════ شريط متحرك ═══════════ -->
+<div class="marquee" id="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>تطبيقات جوال</span><i>✦</i><span>متاجر إلكترونية</span><i>✦</i><span>مواقع شركات</span><i>✦</i><span>مواقع شخصية</span><i>✦</i><span>لوحات تحكم</span><i>✦</i><span>UI/UX تصميم</span><i>✦</i><span>هوية رقمية</span><i>✦</i>
+    <span>تطبيقات جوال</span><i>✦</i><span>متاجر إلكترونية</span><i>✦</i><span>مواقع شركات</span><i>✦</i><span>مواقع شخصية</span><i>✦</i><span>لوحات تحكم</span><i>✦</i><span>UI/UX تصميم</span><i>✦</i><span>هوية رقمية</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ═══════════ الخدمات ═══════════ -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="section__tag">خدماتنا</span>
+      <h2 class="section__title">حلول رقمية <em>متكاملة</em><br>من الفكرة إلى الإطلاق</h2>
+    </div>
+    <div class="services__grid">
+      <article class="service reveal">
+        <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
+        <h3>تطبيقات الجوال</h3>
+        <p>تطبيقات iOS و Android عصرية وسريعة، بتجربة استخدام سلسة تُبقي عملاءك متصلين بك أينما كانوا.</p>
+        <span class="service__num">01</span>
+      </article>
+      <article class="service reveal">
+        <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3Z"/></svg></div>
+        <h3>المواقع الإلكترونية</h3>
+        <p>مواقع شركات ومؤسسات باحترافية عالية، سريعة التحميل، متوافقة مع محركات البحث وجميع الأجهزة.</p>
+        <span class="service__num">02</span>
+      </article>
+      <article class="service reveal">
+        <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.7 8.5a2 2 0 0 1-2 1.5H9a2 2 0 0 1-2-1.6L5.2 3.8A1 1 0 0 0 4.2 3H2.5"/><circle cx="9.5" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg></div>
+        <h3>المتاجر الإلكترونية</h3>
+        <p>متاجر متكاملة مع بوابات دفع، إدارة مخزون، وتجربة شراء مصممة لرفع مبيعاتك ومضاعفة أرباحك.</p>
+        <span class="service__num">03</span>
+      </article>
+      <article class="service reveal">
+        <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+        <h3>المواقع الشخصية</h3>
+        <p>موقع يعكس شخصيتك المهنية — للمصممين، الأطباء، المستشارين وروّاد الأعمال الباحثين عن حضور مميز.</p>
+        <span class="service__num">04</span>
+      </article>
+      <article class="service reveal">
+        <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3>لوحات التحكم والأنظمة</h3>
+        <p>أنظمة إدارة ولوحات تحكم مخصصة تمنحك رؤية كاملة لأعمالك وتُبسّط عملياتك اليومية.</p>
+        <span class="service__num">05</span>
+      </article>
+      <article class="service reveal">
+        <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 8-7 9-4-1-7-4.5-7-9V7l7-4Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>الدعم والصيانة</h3>
+        <p>استضافة موثوقة، حماية متقدمة، ودعم فني مستمر — نبقى معك بعد الإطلاق خطوة بخطوة.</p>
+        <span class="service__num">06</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ معرض الأعمال ═══════════ -->
+<section class="section portfolio" id="portfolio">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="section__tag">معرض الأعمال</span>
+      <h2 class="section__title">مشاريع <em>نفخر بها</em><br>وعملاء يثقون بنا</h2>
+      <p class="section__sub">نماذج من متاجر ومواقع وتطبيقات صمّمناها وطوّرناها بالكامل — كل مشروع قصة نجاح.</p>
+    </div>
+
+    <div class="portfolio__grid">
+
+      <!-- ▸ مشروع 1: متجر أزياء -->
+      <article class="project project--wide reveal">
+        <div class="project__frame">
+          <div class="browser">
+            <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url">lamsa-store.sa</span></div>
+            <svg class="browser__screen" viewBox="0 0 1200 720" role="img" aria-label="متجر لمسة للأزياء">
+              <rect width="1200" height="720" fill="#FDF8F5"/>
+              <!-- شريط علوي -->
+              <rect width="1200" height="34" fill="#2B1F1A"/>
+              <text x="600" y="22" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#F4CDB8">شحن مجاني للطلبات فوق ٢٠٠ ر.س ✦ خصم ١٠٪ على أول طلب</text>
+              <!-- الهيدر -->
+              <rect y="34" width="1200" height="64" fill="#FFFFFF"/>
+              <text x="1140" y="74" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="26" fill="#2B1F1A">لمسة<tspan fill="#D96C4F">.</tspan></text>
+              <text x="880" y="72" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="14" fill="#2B1F1A">الرئيسية</text>
+              <text x="790" y="72" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="14" fill="#8A7568">فساتين</text>
+              <text x="705" y="72" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="14" fill="#8A7568">عبايات</text>
+              <text x="610" y="72" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="14" fill="#8A7568">إكسسوارات</text>
+              <text x="515" y="72" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="14" fill="#8A7568">العروض</text>
+              <circle cx="90" cy="66" r="15" fill="#FDF0EA"/><path d="M84 66h12M90 60v12" stroke="#D96C4F" stroke-width="1.6" transform="rotate(45 90 66)"/>
+              <circle cx="135" cy="66" r="15" fill="#FDF0EA"/><path d="M129 62h12l-1.5 7h-9z M132 69v2a3 3 0 0 0 6 0v-2" stroke="#D96C4F" stroke-width="1.4" fill="none"/>
+              <circle cx="128" cy="56" r="7" fill="#D96C4F"/><text x="128" y="60" text-anchor="middle" font-size="9" fill="#fff" font-family="IBM Plex Sans Arabic">٣</text>
+              <!-- البانر -->
+              <rect x="40" y="122" width="1120" height="270" rx="18" fill="#F6E3D7"/>
+              <circle cx="230" cy="257" r="170" fill="#EFC9B2" opacity="0.6"/>
+              <circle cx="150" cy="330" r="90" fill="#D96C4F" opacity="0.18"/>
+              <!-- صورة فستان مجردة -->
+              <g transform="translate(175 160)">
+                <path d="M55 0 C55 22 25 22 25 44 L10 190 Q55 208 100 190 L85 44 C85 22 55 22 55 0Z" fill="#B8503A"/>
+                <path d="M55 0 C55 22 40 30 40 48 L34 186 Q55 196 76 186 L70 48 C70 30 55 22 55 0Z" fill="#D96C4F"/>
+                <circle cx="55" cy="-14" r="13" fill="#E8A98E"/>
+              </g>
+              <text x="1100" y="205" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="15" fill="#B8503A" font-weight="600">تشكيلة صيف ٢٠٢٦</text>
+              <text x="1100" y="252" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="40" fill="#2B1F1A">تخفيضات الموسم</text>
+              <text x="1100" y="298" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="40" fill="#D96C4F">حتى ٥٠٪</text>
+              <rect x="950" y="322" width="150" height="44" rx="22" fill="#2B1F1A"/>
+              <text x="1025" y="350" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="15" fill="#FFF">تسوّقي الآن</text>
+              <!-- عنوان القسم -->
+              <text x="1160" y="448" text-anchor="end" font-family="Alexandria" font-weight="700" font-size="24" fill="#2B1F1A">وصل حديثاً</text>
+              <text x="40" y="448" font-family="IBM Plex Sans Arabic" font-size="14" fill="#D96C4F">عرض الكل ←</text>
+              <!-- بطاقات المنتجات -->
+              <g font-family="IBM Plex Sans Arabic">
+                <!-- منتج ١ -->
+                <rect x="885" y="470" width="264" height="215" rx="14" fill="#FFFFFF" stroke="#F0E4DB"/>
+                <rect x="899" y="484" width="236" height="120" rx="10" fill="#F6E3D7"/>
+                <path d="M1017 500 c0 12 -16 12 -16 24 l-8 68 q24 10 48 0 l-8 -68 c0 -12 -16 -12 -16 -24Z" fill="#D96C4F"/>
+                <rect x="899" y="484" width="52" height="22" rx="11" fill="#B8503A"/>
+                <text x="925" y="499" text-anchor="middle" font-size="11" fill="#fff">جديد</text>
+                <text x="1135" y="632" text-anchor="end" font-size="14" fill="#2B1F1A" font-weight="600">فستان صيفي مطرّز</text>
+                <text x="1135" y="662" text-anchor="end" font-size="15" fill="#D96C4F" font-weight="700">٢٤٩ ر.س</text>
+                <circle cx="922" cy="652" r="16" fill="#2B1F1A"/><path d="M916 652h12M922 646v12" stroke="#fff" stroke-width="1.6"/>
+                <!-- منتج ٢ -->
+                <rect x="601" y="470" width="264" height="215" rx="14" fill="#FFFFFF" stroke="#F0E4DB"/>
+                <rect x="615" y="484" width="236" height="120" rx="10" fill="#EDE0EF"/>
+                <path d="M733 498 l-26 96 q26 10 52 0 Z" fill="#8E5A96"/>
+                <text x="851" y="632" text-anchor="end" font-size="14" fill="#2B1F1A" font-weight="600">عباية كلاسيكية فاخرة</text>
+                <text x="851" y="662" text-anchor="end" font-size="15" fill="#D96C4F" font-weight="700">٣٩٩ ر.س</text>
+                <circle cx="638" cy="652" r="16" fill="#2B1F1A"/><path d="M632 652h12M638 646v12" stroke="#fff" stroke-width="1.6"/>
+                <!-- منتج ٣ -->
+                <rect x="317" y="470" width="264" height="215" rx="14" fill="#FFFFFF" stroke="#F0E4DB"/>
+                <rect x="331" y="484" width="236" height="120" rx="10" fill="#DCE9E4"/>
+                <circle cx="449" cy="530" r="26" fill="none" stroke="#4E8A72" stroke-width="7"/>
+                <path d="M449 556 v30" stroke="#4E8A72" stroke-width="7"/>
+                <rect x="331" y="484" width="60" height="22" rx="11" fill="#D96C4F"/>
+                <text x="361" y="499" text-anchor="middle" font-size="11" fill="#fff">-٣٠٪</text>
+                <text x="567" y="632" text-anchor="end" font-size="14" fill="#2B1F1A" font-weight="600">حقيبة يد جلدية</text>
+                <text x="567" y="662" text-anchor="end" font-size="15" fill="#D96C4F" font-weight="700">١٧٩ ر.س <tspan fill="#B9A79B" font-size="12" text-decoration="line-through">٢٥٥</tspan></text>
+                <circle cx="354" cy="652" r="16" fill="#2B1F1A"/><path d="M348 652h12M354 646v12" stroke="#fff" stroke-width="1.6"/>
+                <!-- منتج ٤ -->
+                <rect x="33" y="470" width="264" height="215" rx="14" fill="#FFFFFF" stroke="#F0E4DB"/>
+                <rect x="47" y="484" width="236" height="120" rx="10" fill="#F3EAD8"/>
+                <circle cx="165" cy="544" r="34" fill="none" stroke="#C99B3F" stroke-width="6"/>
+                <circle cx="165" cy="544" r="14" fill="#C99B3F"/>
+                <text x="283" y="632" text-anchor="end" font-size="14" fill="#2B1F1A" font-weight="600">ساعة ذهبية أنيقة</text>
+                <text x="283" y="662" text-anchor="end" font-size="15" fill="#D96C4F" font-weight="700">٥٢٠ ر.س</text>
+                <circle cx="70" cy="652" r="16" fill="#2B1F1A"/><path d="M64 652h12M70 646v12" stroke="#fff" stroke-width="1.6"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="project__info">
+          <div class="project__meta"><span class="tag tag--store">متجر إلكتروني</span><span class="project__year">٢٠٢٥</span></div>
+          <h3 class="project__title">متجر لمسة للأزياء النسائية</h3>
+          <p class="project__desc">متجر متكامل للأزياء مع بوابات دفع محلية، سلة ذكية، ونظام كوبونات — حقق نمواً في المبيعات بنسبة ١٤٠٪ خلال ٦ أشهر.</p>
+          <div class="project__tech"><span>تصميم UI/UX</span><span>بوابات دفع</span><span>لوحة إدارة</span></div>
+        </div>
+      </article>
+
+      <!-- ▸ مشروع 2: موقع شخصي -->
+      <article class="project reveal">
+        <div class="project__frame">
+          <div class="browser">
+            <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url">noura-design.me</span></div>
+            <svg class="browser__screen" viewBox="0 0 1200 720" role="img" aria-label="الموقع الشخصي للمصممة نورة">
+              <rect width="1200" height="720" fill="#F4F1EA"/>
+              <!-- هيدر -->
+              <text x="1140" y="66" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="22" fill="#1C1A16">نورة<tspan fill="#E0662E">✦</tspan></text>
+              <text x="880" y="64" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#1C1A16">أعمالي</text>
+              <text x="800" y="64" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#8C8578">عنّي</text>
+              <text x="720" y="64" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#8C8578">تواصل</text>
+              <rect x="60" y="40" width="120" height="38" rx="19" fill="#1C1A16"/>
+              <text x="120" y="65" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#F4F1EA">وظّفني</text>
+              <!-- الاسم الكبير -->
+              <text x="1140" y="205" text-anchor="end" font-family="Alexandria" font-weight="900" font-size="72" fill="#1C1A16">نورة العتيبي</text>
+              <text x="1140" y="258" text-anchor="end" font-family="Alexandria" font-weight="300" font-size="34" fill="#E0662E">مصمّمة هويات بصرية</text>
+              <text x="1140" y="305" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="16" fill="#6B655A">أصمم هويات تجعل العلامات التجارية لا تُنسى — أكثر من ٤٠ علامة في ٥ دول.</text>
+              <!-- شارة متاحة -->
+              <rect x="925" y="330" width="215" height="40" rx="20" fill="#E8F3E4" stroke="#B9D8AE"/>
+              <circle cx="1120" cy="350" r="5" fill="#4E9A3E"/>
+              <text x="1105" y="356" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="13" fill="#3D7A31">متاحة لمشاريع جديدة</text>
+              <!-- شبكة الأعمال -->
+              <g>
+                <rect x="620" y="410" width="520" height="250" rx="16" fill="#E0662E"/>
+                <circle cx="740" cy="530" r="70" fill="#F4F1EA" opacity="0.25"/>
+                <text x="1100" y="480" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="30" fill="#F4F1EA">هوية مقهى رواق</text>
+                <text x="1100" y="520" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="14" fill="#FBDCC8">هوية بصرية كاملة · ٢٠٢٥</text>
+                <rect x="1010" y="600" width="90" height="34" rx="17" fill="none" stroke="#F4F1EA"/>
+                <text x="1055" y="622" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="12" fill="#F4F1EA">عرض ←</text>
+                <rect x="330" y="410" width="260" height="250" rx="16" fill="#1C1A16"/>
+                <circle cx="460" cy="500" r="46" fill="none" stroke="#E0662E" stroke-width="10"/>
+                <text x="460" y="600" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="14" fill="#F4F1EA">شعار تطبيق مشوار</text>
+                <rect x="60" y="410" width="240" height="250" rx="16" fill="#CBD8CE"/>
+                <path d="M110 590 L180 480 L250 590Z" fill="#4E7A5A"/>
+                <circle cx="230" cy="470" r="22" fill="#E0662E"/>
+                <text x="180" y="632" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#2E4636">مطبوعات وقرطاسية</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="project__info">
+          <div class="project__meta"><span class="tag tag--personal">موقع شخصي</span><span class="project__year">٢٠٢٥</span></div>
+          <h3 class="project__title">موقع المصمّمة نورة العتيبي</h3>
+          <p class="project__desc">موقع شخصي بهوية فنية جريئة يعرض أعمال المصممة ويستقبل طلبات العملاء مباشرة.</p>
+          <div class="project__tech"><span>معرض أعمال</span><span>نموذج تواصل</span><span>SEO</span></div>
+        </div>
+      </article>
+
+      <!-- ▸ مشروع 3: موقع شركة -->
+      <article class="project reveal">
+        <div class="project__frame">
+          <div class="browser">
+            <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url">bunyan-co.sa</span></div>
+            <svg class="browser__screen" viewBox="0 0 1200 720" role="img" aria-label="موقع شركة بنيان">
+              <rect width="1200" height="720" fill="#0E1B2C"/>
+              <!-- هيدر -->
+              <text x="1140" y="62" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="24" fill="#FFFFFF">بُنيان</text>
+              <rect x="1040" y="38" width="4" height="34" rx="2" fill="#3FA9F5"/>
+              <text x="880" y="60" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#FFF">الرئيسية</text>
+              <text x="790" y="60" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#7E93AC">مشاريعنا</text>
+              <text x="700" y="60" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#7E93AC">خدماتنا</text>
+              <text x="615" y="60" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#7E93AC">عن الشركة</text>
+              <rect x="60" y="36" width="130" height="42" rx="8" fill="#3FA9F5"/>
+              <text x="125" y="63" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#0E1B2C" font-weight="600">اطلب استشارة</text>
+              <!-- المحتوى -->
+              <text x="1140" y="200" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="15" fill="#3FA9F5" font-weight="600">شركة رائدة في التطوير العقاري</text>
+              <text x="1140" y="262" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="46" fill="#FFFFFF">نبني اليوم..</text>
+              <text x="1140" y="322" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="46" fill="#3FA9F5">مدن الغد</text>
+              <text x="1140" y="372" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="15" fill="#9DB0C6">أكثر من ٢٠ عاماً في تطوير المشاريع السكنية والتجارية بمعايير عالمية.</text>
+              <rect x="990" y="405" width="150" height="46" rx="8" fill="#FFFFFF"/>
+              <text x="1065" y="434" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="14" fill="#0E1B2C" font-weight="600">تصفح مشاريعنا</text>
+              <!-- أفق المدينة -->
+              <g opacity="0.95">
+                <rect x="80" y="300" width="90" height="290" fill="#16304C"/>
+                <rect x="185" y="220" width="110" height="370" fill="#1E4265"/>
+                <rect x="310" y="330" width="80" height="260" fill="#16304C"/>
+                <rect x="405" y="170" width="120" height="420" fill="#26507A"/>
+                <g fill="#3FA9F5" opacity="0.8">
+                  <rect x="425" y="200" width="14" height="14"/><rect x="455" y="200" width="14" height="14"/><rect x="485" y="200" width="14" height="14"/>
+                  <rect x="425" y="240" width="14" height="14"/><rect x="485" y="240" width="14" height="14"/>
+                  <rect x="205" y="250" width="12" height="12"/><rect x="235" y="250" width="12" height="12"/><rect x="265" y="250" width="12" height="12"/>
+                  <rect x="205" y="290" width="12" height="12"/><rect x="265" y="290" width="12" height="12"/>
+                  <rect x="100" y="330" width="12" height="12"/><rect x="130" y="330" width="12" height="12"/>
+                  <rect x="330" y="360" width="11" height="11"/><rect x="358" y="360" width="11" height="11"/>
+                </g>
+                <line x1="60" y1="590" x2="560" y2="590" stroke="#3FA9F5" stroke-width="3"/>
+              </g>
+              <!-- شريط إحصائيات -->
+              <rect x="60" y="620" width="1080" height="70" rx="12" fill="#16304C"/>
+              <g font-family="Alexandria" font-weight="800" font-size="24" fill="#3FA9F5" text-anchor="middle">
+                <text x="990" y="655">+١٢٠</text><text x="720" y="655">+٤٥</text><text x="450" y="655">٢٠</text><text x="200" y="655">٩٨٪</text>
+              </g>
+              <g font-family="IBM Plex Sans Arabic" font-size="12" fill="#9DB0C6" text-anchor="middle">
+                <text x="990" y="678">مشروع منجز</text><text x="720" y="678">جائزة عالمية</text><text x="450" y="678">عاماً من الخبرة</text><text x="200" y="678">رضا العملاء</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="project__info">
+          <div class="project__meta"><span class="tag tag--corporate">موقع شركة</span><span class="project__year">٢٠٢٤</span></div>
+          <h3 class="project__title">شركة بُنيان للتطوير العقاري</h3>
+          <p class="project__desc">موقع مؤسسي فاخر يعرض مشاريع الشركة العقارية مع نظام حجز استشارات ولوحة إدارة محتوى.</p>
+          <div class="project__tech"><span>تعدد اللغات</span><span>إدارة محتوى</span><span>حجز مواعيد</span></div>
+        </div>
+      </article>
+
+      <!-- ▸ مشروع 4: متجر عطور -->
+      <article class="project project--wide reveal">
+        <div class="project__frame">
+          <div class="browser">
+            <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url">oud-royal.com</span></div>
+            <svg class="browser__screen" viewBox="0 0 1200 720" role="img" aria-label="متجر عود الملكي للعطور">
+              <rect width="1200" height="720" fill="#14100C"/>
+              <!-- هيدر -->
+              <text x="1140" y="64" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="26" fill="#D4AF6A">عُود الملكي</text>
+              <text x="860" y="62" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#EFE6D8">الرئيسية</text>
+              <text x="770" y="62" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#8F8270">عطور شرقية</text>
+              <text x="665" y="62" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#8F8270">دهن العود</text>
+              <text x="565" y="62" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="13" fill="#8F8270">هدايا</text>
+              <circle cx="90" cy="58" r="15" fill="none" stroke="#D4AF6A" stroke-opacity="0.5"/>
+              <path d="M84 54h12l-1.5 8h-9z" stroke="#D4AF6A" fill="none" stroke-width="1.3"/>
+              <line x1="60" y1="96" x2="1140" y2="96" stroke="#D4AF6A" stroke-opacity="0.15"/>
+              <!-- البطل -->
+              <text x="1140" y="190" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="14" fill="#D4AF6A" letter-spacing="3">إصدار محدود ✦ ٢٠٢٦</text>
+              <text x="1140" y="252" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="44" fill="#F5EDE0">عطورٌ تُروى</text>
+              <text x="1140" y="312" text-anchor="end" font-family="Alexandria" font-weight="300" font-size="44" fill="#D4AF6A">كالحكايات</text>
+              <text x="1140" y="360" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="15" fill="#A79883">تركيبات فاخرة من أجود أنواع العود والمسك، صُنعت لتدوم في الذاكرة.</text>
+              <rect x="985" y="392" width="155" height="46" rx="23" fill="#D4AF6A"/>
+              <text x="1062" y="421" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="14" fill="#14100C" font-weight="700">اكتشف المجموعة</text>
+              <!-- زجاجة عطر كبيرة -->
+              <g transform="translate(180 150)">
+                <ellipse cx="120" cy="330" rx="130" ry="18" fill="#D4AF6A" opacity="0.1"/>
+                <rect x="95" y="20" width="50" height="34" rx="6" fill="#D4AF6A"/>
+                <rect x="103" y="0" width="34" height="24" rx="4" fill="#8A6D3B"/>
+                <path d="M70 54 h100 q30 60 30 140 a80 80 0 0 1 -160 0 q0 -80 30 -140Z" fill="#2A211A" stroke="#D4AF6A" stroke-opacity="0.5"/>
+                <path d="M85 90 q35 -18 70 0 v120 a55 55 0 0 1 -70 0Z" fill="#D4AF6A" opacity="0.22"/>
+                <rect x="85" y="150" width="70" height="90" rx="8" fill="#14100C" stroke="#D4AF6A" stroke-opacity="0.6"/>
+                <text x="120" y="188" text-anchor="middle" font-family="Alexandria" font-weight="800" font-size="18" fill="#D4AF6A">عُود</text>
+                <text x="120" y="215" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="10" fill="#A79883">الإصدار الملكي</text>
+                <circle cx="245" cy="80" r="3" fill="#D4AF6A"/><circle cx="270" cy="130" r="2" fill="#D4AF6A" opacity="0.6"/><circle cx="10" cy="110" r="2.5" fill="#D4AF6A" opacity="0.7"/>
+              </g>
+              <!-- المنتجات -->
+              <line x1="60" y1="520" x2="1140" y2="520" stroke="#D4AF6A" stroke-opacity="0.15"/>
+              <text x="1140" y="510" text-anchor="end" font-family="Alexandria" font-weight="700" font-size="20" fill="#F5EDE0">الأكثر مبيعاً</text>
+              <g font-family="IBM Plex Sans Arabic">
+                <rect x="810" y="545" width="330" height="140" rx="12" fill="#1E1812" stroke="#D4AF6A" stroke-opacity="0.2"/>
+                <rect x="1030" y="565" width="90" height="100" rx="8" fill="#2A211A"/>
+                <path d="M1063 585 h24 q10 22 10 45 a22 22 0 0 1 -44 0 q0 -23 10 -45Z" fill="#D4AF6A" opacity="0.75"/>
+                <text x="1010" y="592" text-anchor="end" font-size="15" fill="#F5EDE0" font-weight="600">دهن عود كمبودي</text>
+                <text x="1010" y="618" text-anchor="end" font-size="12" fill="#8F8270">نفحات دافئة تدوم +١٢ ساعة</text>
+                <text x="1010" y="655" text-anchor="end" font-size="17" fill="#D4AF6A" font-weight="700">٨٥٠ ر.س</text>
+                <rect x="435" y="545" width="330" height="140" rx="12" fill="#1E1812" stroke="#D4AF6A" stroke-opacity="0.2"/>
+                <rect x="655" y="565" width="90" height="100" rx="8" fill="#2A211A"/>
+                <path d="M688 585 h24 q10 22 10 45 a22 22 0 0 1 -44 0 q0 -23 10 -45Z" fill="#B87333" opacity="0.75"/>
+                <text x="635" y="592" text-anchor="end" font-size="15" fill="#F5EDE0" font-weight="600">مسك الغزال الأصلي</text>
+                <text x="635" y="618" text-anchor="end" font-size="12" fill="#8F8270">فخامة شرقية خالصة</text>
+                <text x="635" y="655" text-anchor="end" font-size="17" fill="#D4AF6A" font-weight="700">٤٢٠ ر.س</text>
+                <rect x="60" y="545" width="330" height="140" rx="12" fill="#1E1812" stroke="#D4AF6A" stroke-opacity="0.2"/>
+                <rect x="280" y="565" width="90" height="100" rx="8" fill="#2A211A"/>
+                <path d="M313 585 h24 q10 22 10 45 a22 22 0 0 1 -44 0 q0 -23 10 -45Z" fill="#E8E3D8" opacity="0.7"/>
+                <text x="260" y="592" text-anchor="end" font-size="15" fill="#F5EDE0" font-weight="600">بوكس الهدايا الملكي</text>
+                <text x="260" y="618" text-anchor="end" font-size="12" fill="#8F8270">٣ عطور + دهن عود</text>
+                <text x="260" y="655" text-anchor="end" font-size="17" fill="#D4AF6A" font-weight="700">١,٢٠٠ ر.س</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="project__info">
+          <div class="project__meta"><span class="tag tag--store">متجر إلكتروني</span><span class="project__year">٢٠٢٥</span></div>
+          <h3 class="project__title">متجر عُود الملكي للعطور</h3>
+          <p class="project__desc">متجر فاخر للعطور الشرقية بهوية ملكية داكنة، مع نظام اشتراكات شهرية وتغليف هدايا — متوسط قيمة الطلب ارتفع ٦٥٪.</p>
+          <div class="project__tech"><span>هوية فاخرة</span><span>نظام اشتراكات</span><span>شحن دولي</span></div>
+        </div>
+      </article>
+
+      <!-- ▸ مشروع 5: تطبيق جوال -->
+      <article class="project reveal">
+        <div class="project__frame project__frame--app">
+          <svg class="phone-scene" viewBox="0 0 640 720" role="img" aria-label="تطبيق ذوق لتوصيل الطعام">
+            <defs>
+              <linearGradient id="appBg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1B2431"/><stop offset="1" stop-color="#10161F"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="720" fill="url(#appBg)"/>
+            <circle cx="540" cy="120" r="160" fill="#FF7A45" opacity="0.08"/>
+            <circle cx="80" cy="620" r="140" fill="#FF7A45" opacity="0.06"/>
+            <!-- الهاتف -->
+            <g transform="translate(170 40)">
+              <rect x="0" y="0" width="300" height="640" rx="42" fill="#0B0F14" stroke="#2E3947" stroke-width="3"/>
+              <rect x="10" y="10" width="280" height="620" rx="34" fill="#FFF9F5"/>
+              <rect x="115" y="22" width="70" height="18" rx="9" fill="#0B0F14"/>
+              <!-- الترويسة -->
+              <text x="270" y="80" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="12" fill="#9A8E85">مساء الخير 👋</text>
+              <text x="270" y="104" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="17" fill="#241C16">وش تشتهي اليوم؟</text>
+              <circle cx="45" cy="88" r="18" fill="#FFEDE3"/><circle cx="45" cy="83" r="6" fill="#FF7A45"/><path d="M35 96 a10 7 0 0 1 20 0" fill="#FF7A45"/>
+              <!-- البحث -->
+              <rect x="30" y="125" width="240" height="40" rx="20" fill="#F3EBE4"/>
+              <circle cx="248" cy="145" r="7" fill="none" stroke="#B4A79C" stroke-width="2"/><line x1="243" y1="151" x2="238" y2="156" stroke="#B4A79C" stroke-width="2"/>
+              <text x="228" y="150" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="12" fill="#B4A79C">ابحث عن مطعم أو طبق...</text>
+              <!-- التصنيفات -->
+              <g font-family="IBM Plex Sans Arabic" font-size="11.5">
+                <rect x="196" y="182" width="74" height="32" rx="16" fill="#FF7A45"/><text x="233" y="203" text-anchor="middle" fill="#FFF">🍔 برجر</text>
+                <rect x="112" y="182" width="76" height="32" rx="16" fill="#F3EBE4"/><text x="150" y="203" text-anchor="middle" fill="#6B5F55">🍕 بيتزا</text>
+                <rect x="30" y="182" width="74" height="32" rx="16" fill="#F3EBE4"/><text x="67" y="203" text-anchor="middle" fill="#6B5F55">☕ قهوة</text>
+              </g>
+              <!-- بطاقة عرض -->
+              <rect x="30" y="232" width="240" height="96" rx="16" fill="#241C16"/>
+              <circle cx="70" cy="280" r="34" fill="#FF7A45" opacity="0.25"/>
+              <circle cx="70" cy="280" r="22" fill="#FF7A45"/>
+              <text x="70" y="287" font-size="20" text-anchor="middle">🍟</text>
+              <text x="252" y="268" text-anchor="end" font-family="Alexandria" font-weight="700" font-size="14" fill="#FFF">خصم ٤٠٪ اليوم</text>
+              <text x="252" y="292" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="10.5" fill="#C9BDB2">على جميع الوجبات العائلية</text>
+              <rect x="188" y="300" width="64" height="20" rx="10" fill="#FF7A45"/><text x="220" y="314" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="10" fill="#FFF">اطلب الآن</text>
+              <!-- قائمة مطاعم -->
+              <text x="270" y="362" text-anchor="end" font-family="Alexandria" font-weight="700" font-size="14" fill="#241C16">الأقرب إليك</text>
+              <g font-family="IBM Plex Sans Arabic">
+                <rect x="30" y="378" width="240" height="70" rx="14" fill="#FFF" stroke="#F0E5DC"/>
+                <rect x="206" y="390" width="48" height="46" rx="10" fill="#FFE8DB"/><text x="230" y="420" text-anchor="middle" font-size="18">🍗</text>
+                <text x="196" y="406" text-anchor="end" font-size="12.5" fill="#241C16" font-weight="600">مطعم بيت المندي</text>
+                <text x="196" y="426" text-anchor="end" font-size="10.5" fill="#9A8E85">⭐ ٤.٨ · توصيل ٢٠ دقيقة</text>
+                <rect x="42" y="394" width="52" height="22" rx="11" fill="#EDF7EA"/><text x="68" y="409" text-anchor="middle" font-size="10" fill="#3D7A31">مفتوح</text>
+                <rect x="30" y="458" width="240" height="70" rx="14" fill="#FFF" stroke="#F0E5DC"/>
+                <rect x="206" y="470" width="48" height="46" rx="10" fill="#E3F0FF"/><text x="230" y="500" text-anchor="middle" font-size="18">🥙</text>
+                <text x="196" y="486" text-anchor="end" font-size="12.5" fill="#241C16" font-weight="600">شاورما الخليج</text>
+                <text x="196" y="506" text-anchor="end" font-size="10.5" fill="#9A8E85">⭐ ٤.٦ · توصيل ١٥ دقيقة</text>
+                <rect x="42" y="474" width="52" height="22" rx="11" fill="#FFF2E5"/><text x="68" y="489" text-anchor="middle" font-size="10" fill="#C77728">مشغول</text>
+              </g>
+              <!-- شريط سفلي -->
+              <rect x="10" y="562" width="280" height="68" rx="0" fill="#FFFFFF"/>
+              <line x1="10" y1="562" x2="290" y2="562" stroke="#F0E5DC"/>
+              <g font-family="IBM Plex Sans Arabic" font-size="9.5" text-anchor="middle">
+                <circle cx="250" cy="588" r="4" fill="#FF7A45"/><text x="250" y="614" fill="#FF7A45" font-weight="600">الرئيسية</text>
+                <circle cx="190" cy="588" r="4" fill="#D8CCC2"/><text x="190" y="614" fill="#B4A79C">الطلبات</text>
+                <circle cx="110" cy="588" r="4" fill="#D8CCC2"/><text x="110" y="614" fill="#B4A79C">المفضلة</text>
+                <circle cx="50" cy="588" r="4" fill="#D8CCC2"/><text x="50" y="614" fill="#B4A79C">حسابي</text>
+              </g>
+            </g>
+            <!-- عناصر طافية -->
+            <g transform="translate(60 150)">
+              <rect width="130" height="52" rx="12" fill="#FFFFFF" opacity="0.97"/>
+              <text x="112" y="22" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="10" fill="#9A8E85">وصل طلبك 🎉</text>
+              <text x="112" y="40" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="11" fill="#241C16" font-weight="600">خلال ١٨ دقيقة</text>
+              <circle cx="24" cy="26" r="12" fill="#EDF7EA"/><path d="m19 26 3.5 3.5L30 22" stroke="#3D7A31" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </g>
+            <g transform="translate(478 480)">
+              <rect width="120" height="52" rx="12" fill="#FFFFFF" opacity="0.97"/>
+              <text x="102" y="22" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="10" fill="#9A8E85">تقييم التطبيق</text>
+              <text x="102" y="41" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="12" fill="#241C16" font-weight="700">⭐ ٤.٩ / ٥</text>
+            </g>
+          </svg>
+        </div>
+        <div class="project__info">
+          <div class="project__meta"><span class="tag tag--app">تطبيق جوال</span><span class="project__year">٢٠٢٤</span></div>
+          <h3 class="project__title">تطبيق ذوق لتوصيل الطعام</h3>
+          <p class="project__desc">تطبيق iOS و Android لتوصيل الطعام مع تتبع مباشر للطلبات ونظام نقاط ولاء — أكثر من ٥٠ ألف تحميل.</p>
+          <div class="project__tech"><span>iOS + Android</span><span>تتبع مباشر</span><span>مدفوعات</span></div>
+        </div>
+      </article>
+
+      <!-- ▸ مشروع 6: لوحة تحكم -->
+      <article class="project reveal">
+        <div class="project__frame">
+          <div class="browser">
+            <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url">dashboard.qafza.io</span></div>
+            <svg class="browser__screen" viewBox="0 0 1200 720" role="img" aria-label="لوحة تحكم منصة قفزة التعليمية">
+              <rect width="1200" height="720" fill="#F5F7FB"/>
+              <!-- الشريط الجانبي -->
+              <rect x="960" y="0" width="240" height="720" fill="#101828"/>
+              <text x="1180" y="58" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="20" fill="#FFF">قفزة<tspan fill="#6C5CE7">.</tspan></text>
+              <rect x="980" y="95" width="200" height="44" rx="10" fill="#6C5CE7"/>
+              <text x="1160" y="123" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="13" fill="#FFF" font-weight="600">لوحة المعلومات</text>
+              <g font-family="IBM Plex Sans Arabic" font-size="13" fill="#8B93A7" text-anchor="end">
+                <text x="1160" y="175">الدورات</text>
+                <text x="1160" y="220">الطلاب</text>
+                <text x="1160" y="265">المدفوعات</text>
+                <text x="1160" y="310">التقارير</text>
+                <text x="1160" y="355">الإعدادات</text>
+              </g>
+              <circle cx="998" cy="170" r="3" fill="#4B5468"/><circle cx="998" cy="215" r="3" fill="#4B5468"/><circle cx="998" cy="260" r="3" fill="#4B5468"/><circle cx="998" cy="305" r="3" fill="#4B5468"/><circle cx="998" cy="350" r="3" fill="#4B5468"/>
+              <rect x="980" y="640" width="200" height="56" rx="12" fill="#1B2436"/>
+              <circle cx="1155" cy="668" r="15" fill="#6C5CE7"/><text x="1155" y="673" text-anchor="middle" font-family="Alexandria" font-size="12" fill="#FFF" font-weight="700">أ</text>
+              <text x="1130" y="664" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="11" fill="#FFF">أحمد السالم</text>
+              <text x="1130" y="681" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="9.5" fill="#8B93A7">مدير المنصة</text>
+              <!-- الترويسة -->
+              <text x="930" y="55" text-anchor="end" font-family="Alexandria" font-weight="700" font-size="20" fill="#101828">مرحباً أحمد 👋</text>
+              <text x="930" y="80" text-anchor="end" font-family="IBM Plex Sans Arabic" font-size="12" fill="#7A8299">إليك ملخص أداء المنصة هذا الأسبوع</text>
+              <rect x="40" y="38" width="150" height="42" rx="10" fill="#6C5CE7"/>
+              <text x="115" y="65" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="12.5" fill="#FFF">+ دورة جديدة</text>
+              <!-- بطاقات الإحصائيات -->
+              <g font-family="IBM Plex Sans Arabic">
+                <rect x="710" y="110" width="220" height="96" rx="14" fill="#FFF" stroke="#E8ECF4"/>
+                <text x="910" y="142" text-anchor="end" font-size="12" fill="#7A8299">إجمالي الطلاب</text>
+                <text x="910" y="178" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="26" fill="#101828">١٢,٤٨٠</text>
+                <rect x="726" y="152" width="58" height="24" rx="12" fill="#E9F9EF"/><text x="755" y="168" text-anchor="middle" font-size="11" fill="#1F9D55">+١٨٪</text>
+                <rect x="480" y="110" width="220" height="96" rx="14" fill="#FFF" stroke="#E8ECF4"/>
+                <text x="680" y="142" text-anchor="end" font-size="12" fill="#7A8299">الإيرادات الشهرية</text>
+                <text x="680" y="178" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="26" fill="#101828">٨٤٥ ألف</text>
+                <rect x="496" y="152" width="58" height="24" rx="12" fill="#E9F9EF"/><text x="525" y="168" text-anchor="middle" font-size="11" fill="#1F9D55">+٢٤٪</text>
+                <rect x="250" y="110" width="220" height="96" rx="14" fill="#FFF" stroke="#E8ECF4"/>
+                <text x="450" y="142" text-anchor="end" font-size="12" fill="#7A8299">دورة نشطة</text>
+                <text x="450" y="178" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="26" fill="#101828">٣٢٦</text>
+                <rect x="266" y="152" width="58" height="24" rx="12" fill="#EEF" /><text x="295" y="168" text-anchor="middle" font-size="11" fill="#6C5CE7">+١٢</text>
+                <rect x="40" y="110" width="180" height="96" rx="14" fill="#101828"/>
+                <text x="200" y="142" text-anchor="end" font-size="12" fill="#8B93A7">نسبة الإكمال</text>
+                <text x="200" y="178" text-anchor="end" font-family="Alexandria" font-weight="800" font-size="26" fill="#6C5CE7">٨٧٪</text>
+              </g>
+              <!-- مخطط أعمدة -->
+              <rect x="380" y="236" width="550" height="290" rx="14" fill="#FFF" stroke="#E8ECF4"/>
+              <text x="905" y="272" text-anchor="end" font-family="Alexandria" font-weight="700" font-size="15" fill="#101828">التسجيلات الأسبوعية</text>
+              <rect x="405" y="252" width="110" height="30" rx="8" fill="#F3F1FE"/><text x="460" y="272" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="11" fill="#6C5CE7">آخر ٧ أيام ▾</text>
+              <g>
+                <rect x="850" y="400" width="36" height="90" rx="6" fill="#E3DEFB"/>
+                <rect x="790" y="360" width="36" height="130" rx="6" fill="#E3DEFB"/>
+                <rect x="730" y="420" width="36" height="70" rx="6" fill="#E3DEFB"/>
+                <rect x="670" y="330" width="36" height="160" rx="6" fill="#6C5CE7"/>
+                <rect x="610" y="380" width="36" height="110" rx="6" fill="#E3DEFB"/>
+                <rect x="550" y="345" width="36" height="145" rx="6" fill="#E3DEFB"/>
+                <rect x="490" y="300" width="36" height="190" rx="6" fill="#6C5CE7"/>
+              </g>
+              <g font-family="IBM Plex Sans Arabic" font-size="10.5" fill="#7A8299" text-anchor="middle">
+                <text x="868" y="510">السبت</text><text x="808" y="510">الأحد</text><text x="748" y="510">الاثنين</text><text x="688" y="510">الثلاثاء</text><text x="628" y="510">الأربعاء</text><text x="568" y="510">الخميس</text><text x="508" y="510">الجمعة</text>
+              </g>
+              <!-- مخطط دائري -->
+              <rect x="40" y="236" width="310" height="290" rx="14" fill="#FFF" stroke="#E8ECF4"/>
+              <text x="325" y="272" text-anchor="end" font-family="Alexandria" font-weight="700" font-size="15" fill="#101828">توزيع الطلاب</text>
+              <g transform="translate(195 390)">
+                <circle r="72" fill="none" stroke="#EDF0F7" stroke-width="26"/>
+                <circle r="72" fill="none" stroke="#6C5CE7" stroke-width="26" stroke-dasharray="226 452" transform="rotate(-90)"/>
+                <circle r="72" fill="none" stroke="#22C3A6" stroke-width="26" stroke-dasharray="113 452" stroke-dashoffset="-226" transform="rotate(-90)"/>
+                <circle r="72" fill="none" stroke="#F5A623" stroke-width="26" stroke-dasharray="68 452" stroke-dashoffset="-339" transform="rotate(-90)"/>
+                <text y="-2" text-anchor="middle" font-family="Alexandria" font-weight="800" font-size="24" fill="#101828">١٢.٤</text>
+                <text y="20" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="11" fill="#7A8299">ألف طالب</text>
+              </g>
+              <g font-family="IBM Plex Sans Arabic" font-size="11" fill="#4B5468" text-anchor="end">
+                <circle cx="315" cy="492" r="5" fill="#6C5CE7"/><text x="305" y="496">برمجة ٥٠٪</text>
+                <circle cx="215" cy="492" r="5" fill="#22C3A6"/><text x="205" y="496">تصميم ٢٥٪</text>
+                <circle cx="115" cy="492" r="5" fill="#F5A623"/><text x="105" y="496">تسويق ١٥٪</text>
+              </g>
+              <!-- جدول -->
+              <rect x="40" y="556" width="890" height="140" rx="14" fill="#FFF" stroke="#E8ECF4"/>
+              <text x="905" y="590" text-anchor="end" font-family="Alexandria" font-weight="700" font-size="15" fill="#101828">أحدث التسجيلات</text>
+              <g font-family="IBM Plex Sans Arabic" font-size="12">
+                <line x1="60" y1="608" x2="910" y2="608" stroke="#EDF0F7"/>
+                <circle cx="890" cy="632" r="12" fill="#F3F1FE"/><text x="870" y="637" text-anchor="end" fill="#101828">سارة الأحمدي — دورة تطوير الويب المتقدمة</text>
+                <rect x="70" y="620" width="70" height="24" rx="12" fill="#E9F9EF"/><text x="105" y="636" text-anchor="middle" fill="#1F9D55" font-size="11">مكتمل</text>
+                <text x="250" y="637" fill="#7A8299" font-size="11">قبل ٥ دقائق</text>
+                <line x1="60" y1="656" x2="910" y2="656" stroke="#EDF0F7"/>
+                <circle cx="890" cy="678" r="12" fill="#FFF4E5"/><text x="870" y="683" text-anchor="end" fill="#101828">محمد العنزي — دورة تصميم واجهات المستخدم</text>
+                <rect x="70" y="666" width="70" height="24" rx="12" fill="#FFF4E5"/><text x="105" y="682" text-anchor="middle" fill="#C77728" font-size="11">قيد الدفع</text>
+                <text x="250" y="683" fill="#7A8299" font-size="11">قبل ١٢ دقيقة</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="project__info">
+          <div class="project__meta"><span class="tag tag--system">نظام إداري</span><span class="project__year">٢٠٢٥</span></div>
+          <h3 class="project__title">لوحة تحكم منصة قفزة التعليمية</h3>
+          <p class="project__desc">نظام إدارة متكامل لمنصة تعليمية: إدارة دورات وطلاب ومدفوعات مع تقارير لحظية ورسوم بيانية تفاعلية.</p>
+          <div class="project__tech"><span>تقارير لحظية</span><span>صلاحيات متعددة</span><span>API</span></div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="portfolio__cta reveal">
+      <p>أعجبك ما رأيت؟ مشروعك القادم قد يكون نجمة معرضنا التالي.</p>
+      <a href="#contact" class="btn btn--accent btn--lg">ابدأ مشروعك معنا</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ كيف نعمل ═══════════ -->
+<section class="section process" id="process">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="section__tag">منهجية العمل</span>
+      <h2 class="section__title">أربع خطوات..<br>و<em>مشروعك جاهز</em></h2>
+    </div>
+    <div class="process__steps">
+      <div class="step reveal">
+        <span class="step__num">١</span>
+        <h3>الاستماع والتحليل</h3>
+        <p>نجلس معك، نفهم فكرتك وأهدافك وجمهورك، ونحوّلها إلى خطة عمل واضحة بجدول زمني محدد.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step__num">٢</span>
+        <h3>التصميم</h3>
+        <p>نصمم واجهات تعكس هويتك وتُبهر عملاءك — وتراجعها وتعتمدها قبل كتابة أي سطر برمجي.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step__num">٣</span>
+        <h3>التطوير والاختبار</h3>
+        <p>نطوّر بأحدث التقنيات مع اختبارات شاملة على جميع الأجهزة، وتقارير تقدّم دورية تصلك أولاً بأول.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step__num">٤</span>
+        <h3>الإطلاق والدعم</h3>
+        <p>نطلق مشروعك ونبقى بجانبك: صيانة، تحديثات، ودعم فني مستمر يضمن استمرارية نجاحك.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ من نحن ═══════════ -->
+<section class="section about" id="about">
+  <div class="container about__inner">
+    <div class="about__content reveal">
+      <span class="section__tag">من نحن</span>
+      <h2 class="section__title">AMS TECH<br><em>شغف يصنع الفرق</em></h2>
+      <p>
+        نحن فريق من المطورين والمصممين المتخصصين، جمعنا شغف واحد: بناء منتجات رقمية
+        عربية تنافس عالمياً. منذ انطلاقتنا ونحن نساعد الشركات وروّاد الأعمال على
+        التحوّل الرقمي بحلول مصممة خصيصاً لهم — لا قوالب جاهزة، ولا حلول منسوخة.
+      </p>
+      <ul class="about__points">
+        <li><b>جودة بلا مساومة</b> — كل مشروع يمر بمراجعات دقيقة قبل التسليم.</li>
+        <li><b>شفافية كاملة</b> — تعرف أين وصل مشروعك في كل لحظة.</li>
+        <li><b>أسعار عادلة</b> — باقات مرنة تناسب الشركات الناشئة والكبيرة.</li>
+        <li><b>التزام بالمواعيد</b> — نسلّم في الوقت المحدد، دائماً.</li>
+      </ul>
+    </div>
+    <div class="about__card reveal">
+      <div class="about__quote">
+        <svg width="42" height="34" viewBox="0 0 42 34" fill="none" aria-hidden="true"><path d="M0 34V20.4C0 8.8 6.8 1.6 18.2 0l2 5.4C13 7.4 9.4 11.4 9 16h9v18H0Zm24 0V20.4C24 8.8 30.8 1.6 42.2 0l-0.2 5.4C34.8 7.4 33.4 11.4 33 16h9v18H24Z" fill="var(--accent)" opacity="0.35"/></svg>
+        <p>تعاملنا مع AMS TECH كان نقطة تحوّل. متجرنا الجديد ضاعف مبيعاتنا، والفريق كان معنا في كل تفصيلة — احترافية نادراً ما تجدها.</p>
+        <div class="about__quote-author">
+          <span class="about__quote-avatar">ع</span>
+          <div><b>عبدالله الحربي</b><small>مؤسس متجر لمسة</small></div>
+        </div>
+      </div>
+      <div class="about__badges">
+        <div class="about__badge"><b>٩٨٪</b><span>رضا العملاء</span></div>
+        <div class="about__badge"><b>٢٤/٧</b><span>دعم فني</span></div>
+        <div class="about__badge"><b>١٠٠٪</b><span>تسليم بالموعد</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ تواصل معنا ═══════════ -->
+<section class="section contact" id="contact">
+  <div class="container contact__inner">
+    <div class="contact__content reveal">
+      <span class="section__tag">تواصل معنا</span>
+      <h2 class="section__title">عندك فكرة؟<br><em>خلّنا نحوّلها لواقع</em></h2>
+      <p>أرسل لنا تفاصيل مشروعك وسنعود إليك خلال ٢٤ ساعة بخطة واضحة وعرض سعر مفصّل — الاستشارة الأولى مجانية.</p>
+      <div class="contact__channels">
+        <a href="mailto:a.l.m.s.info80@gmail.com" class="channel">
+          <span class="channel__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 8 9 6 9-6"/></svg></span>
+          <div><small>البريد الإلكتروني</small><b>a.l.m.s.info80@gmail.com</b></div>
+        </a>
+      </div>
+    </div>
+    <form class="contact__form reveal" id="contactForm">
+      <div class="form__row">
+        <div class="form__field">
+          <label for="fName">الاسم الكامل</label>
+          <input type="text" id="fName" name="name" placeholder="اكتب اسمك" required>
+        </div>
+        <div class="form__field">
+          <label for="fPhone">رقم الجوال</label>
+          <input type="tel" id="fPhone" name="phone" placeholder="05XXXXXXXX" required>
+        </div>
+      </div>
+      <div class="form__field">
+        <label for="fEmail">البريد الإلكتروني</label>
+        <input type="email" id="fEmail" name="email" placeholder="name@example.com" required>
+      </div>
+      <div class="form__field">
+        <label for="fType">نوع المشروع</label>
+        <select id="fType" name="type" required>
+          <option value="" disabled selected>اختر نوع المشروع</option>
+          <option>متجر إلكتروني</option>
+          <option>موقع شركة</option>
+          <option>موقع شخصي</option>
+          <option>تطبيق جوال</option>
+          <option>لوحة تحكم / نظام إداري</option>
+          <option>أخرى</option>
+        </select>
+      </div>
+      <div class="form__field">
+        <label for="fMsg">تفاصيل المشروع</label>
+        <textarea id="fMsg" name="message" rows="4" placeholder="حدّثنا عن فكرتك، أهدافك، وأي تفاصيل تساعدنا نفهم مشروعك..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn--accent btn--lg form__submit">
+        أرسل طلبك
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m3 12 18-9-5 18-4-7-9-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="form__note" id="formNote" hidden>✓ تم استلام طلبك بنجاح — سنتواصل معك خلال ٢٤ ساعة.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ═══════════ الفوتر ═══════════ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#hero" class="nav__logo">
+      <svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="var(--accent)" opacity="0.12"/>
+        <path d="M18 44 L32 18 L46 44" stroke="var(--accent)" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav__logo-text">AMS<b>TECH</b></span>
+    </a>
+    <nav class="footer__links">
+      <a href="#services">خدماتنا</a>
+      <a href="#portfolio">أعمالنا</a>
+      <a href="#process">كيف نعمل</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <p class="footer__copy">© ٢٠٢٦ AMS TECH — جميع الحقوق محفوظة · صُنع بشغف 🖤</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
